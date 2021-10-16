@@ -13,6 +13,10 @@ header{
 .nav-name:hover{
     border-bottom: 2px solid white;
 }
+.nav-item{
+    display: flex;
+    flex-direction: row-reverse;
+ }
 .h-details{
     text-align: center;
     position: relative;
@@ -90,32 +94,33 @@ input[type=submit]:hover {
     padding: 20px;
   }
   
-@media only screen and (min-width:769px) {
-    .nav-item{
-       display: flex;
-       flex-direction: row-reverse;
-    }
-    .nav-name{
-        margin-left: 40px;
-    }
+@media only screen and (min-width:1024px){
     .nav-link a:hover{
         border-bottom: 2px solid white;
     }
   }
-@media only screen and (max-width:1024px) and (min-width:769px) {
+@media only screen and (max-width:1023px) and (min-width:769px) {
    header{
        height: 70vh;
    }
    .address-custom{
        display: none;
    }
+   .nav-item{
+    display: flex;
+    flex-direction: row;
+ }
 }
-@media only screen and (max-width:768px) and (min-width:481px){
+@media only screen and (max-width:768px) and (min-width:401px){
    header{
        height: 100vh;
    }
+   .nav-item{
+    display: flex;
+    flex-direction: row;
+ }
   }
-@media only screen and (max-width:480px) and (min-width:320px) {
+@media only screen and (max-width:400px) and (min-width:320px) {
    header{
        height: 100vh;
    }
@@ -135,6 +140,10 @@ input[type=submit]:hover {
    .form-custom{
        margin-bottom: 10px;
    }
+   .nav-item{
+    display: flex;
+    flex-direction: row;
+ }
    footer img{
        width: 40px;
    }
